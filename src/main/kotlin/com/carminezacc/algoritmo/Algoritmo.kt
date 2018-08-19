@@ -142,10 +142,6 @@ class Application {
     */
     @Bean
     fun init(posts: PostRepository, users: UtenteRepository, string: GenericStringRepository) = CommandLineRunner {
-        string.save(GenericString(
-                "giornata",
-                "0"
-        ))
     }
 }
 
