@@ -142,23 +142,6 @@ class Application {
     */
     @Bean
     fun init(posts: PostRepository, users: UtenteRepository, string: GenericStringRepository) = CommandLineRunner {
-        users.save(Utente(
-                "Angelo",
-                "Carriero",
-                "angcar",
-                "champions20182019"
-        ))
-        users.save(Utente(
-                "Carmine",
-                "Zaccagnino",
-                "carminezacc",
-                "giallo"
-        ))
-        string.save(GenericString(
-                "giornata",
-                "0"
-        ))
-
     }
 }
 
