@@ -139,11 +139,7 @@ class Application {
         fun passwordEncoder(): PasswordEncoder {
             return BCryptPasswordEncoder()
         }
-    */
-    @Bean
-    fun init(posts: PostRepository, users: UtenteRepository, string: GenericStringRepository) = CommandLineRunner {
-    }
-}
+    */ }
 
 
 fun main(args: Array<String>) {
