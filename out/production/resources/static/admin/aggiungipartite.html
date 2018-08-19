@@ -7,7 +7,7 @@
     <meta name="author" content="">
     <link rel="icon" href="./favicon.png">
 
-    <title>Amministrazione Blog ZaccaCMS</title>
+    <title>Aggiunta partite Algoritmo</title>
 
     <link href="http://getbootstrap.com/docs/4.1/examples/dashboard/dashboard.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -33,70 +33,66 @@
               <li class="nav-item">
                 <a class="nav-link" href="../admin.html">
                   <span data-feather="home"></span>
-                  Pannello admin <span class="sr-only">(current)</span>
+                  Tutte le Partite <span class="sr-only">(current)</span>
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active" href="#">
                   <span data-feather="file"></span>
-                  Scrivi Post
+                  Aggiungi Partite
                 </a>
               </li>
-              <li class="nav-item">
+              <!--li class="nav-item">
                 <a class="nav-link" href="users.html">
                   <span data-feather="users"></span>
                   Utenti
                 </a>
-              </li>
+              </li-->
             </ul>
           </div>
         </nav>
 
         <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
           <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-            <h1 class="h2">Dashboard</h1>
+            <h1 class="h2">Aggiunta Partita</h1>
           </div>
 
 
           <div class="container">
       <div class="py-5 text-center">
-        <h2>Creazione post</h2>
-        <p class="lead">Con breve introduzione("lead").</p>
-        <p>E testo</p>
+        <h2>Benvenuto</h2>
+        <p class="lead">Qui potrai aggiungere le partite all'algoritmo in completa autonomia, buon lavoro!</p>
       </div>
 
         </div>
-        <div class="col-md-8 order-md-1">
+        <div class="col-md-8 order-md-1 text-center">
 
-
-            <div class="mb-3">
-              <label for="titolo">Titolo</label>
-              <input type="text" class="form-control" id="titolo" placeholder="Titolo dell'articolo" required>
-            </div>
-
-            <div class="mb-3">
-              <label for="titolo">URL Immagine</label>
-              <input type="text" class="form-control" id="headerURL" placeholder="URL Immagine header" required>
-            </div>
 
           <div class="mb-3">
-            <label for="lead">Introduzione all'articolo</label>
-            <input type="text" class="form-control" id="lead" placeholder="Lead dell'articolo" required>
+            <input type="text"  id="giornata" placeholder="Giornata" required>
           </div>
 
+
+          <div id="partite" class="mb-3">
+            <input type="text"  class="sqCasa" placeholder="Squadra in Casa" required>
+            <input type="text"  class="sqTrasferta" placeholder="Squadra in Trasferta" required> <br>
+            <input type="text" class="golCasa" placeholder="Gol Squadra in Casa" required>
+            <input type="text" class="golTrasferta" placeholder="Gol Squadra in Trasferta" required> <br>
+          </div>
+          <div class="mb-3">
+            <button id="altra" class="btn btn-primary" >Altra Partita</button>
+          </div>
             <div class="row">
-              <label for="testo">Testo articolo</label>
-              <textarea class="form-control" rows="5" id="testo"></textarea>
             </div>
             <hr class="mb-4">
 
           <hr class="mb-4">
-            <button class="btn btn-primary btn-lg btn-block" id="invia" type="submit" >Pubblica Post</button>
+            <button class="btn btn-success btn-lg btn-block" id="invia" type="submit" >Aggiungi Partita</button>
         </div>
       </div>
 
       <footer class="my-5 pt-5 text-muted text-center text-small">
-        <p class="mb-1">Grazie per il post!</p>
+        <p class="mb-1">Problemi? Invia una mail a <a href="mailto:carmine@carminezacc.com">carmine@carminezacc.com</a></p>
       </footer>
     </div>
         </main>

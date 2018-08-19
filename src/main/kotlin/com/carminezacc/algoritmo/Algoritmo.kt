@@ -23,19 +23,6 @@ import org.springframework.web.servlet.view.groovy.GroovyMarkupViewResolver
 import org.springframework.web.servlet.view.groovy.GroovyMarkupConfigurer
 import org.springframework.web.servlet.config.annotation.EnableWebMvc
 
-
-@SpringBootApplication
-class CmsApplication
-
-class PostRicevuto (
-        var token: String,
-        var lead: String,
-        var titolo: String,
-        var idutente: Long,
-        var testo: String,
-        var headerURL: String
-)
-
 class GiornataRicevuta (
         var token: String,
         var idutente: Long,
@@ -66,6 +53,11 @@ class UsernameAndPassword(
 @RestController
 class UtenteController (val repository: UtenteRepository, val repoSessione: SessioneRepository) {
 
+    @GetMapping("/api/id/nome/{nome}")
+    fun trovaGiornata(@PathVariable nome: String) =
+            repository.findByNickName(nome).id
+
+
     @PostMapping("/api/login")
     fun accedi(@RequestBody post: UsernameAndPassword): String {
         val nickName = post.username
@@ -83,52 +75,33 @@ class UtenteController (val repository: UtenteRepository, val repoSessione: Sess
         }
         return "false"
     }
-
-    @GetMapping("/api/utente/{id}")
-    fun trovaUtente(@PathVariable id: Long) =
-            repository.findById(id)
-    @GetMapping("/api/utente/nome/{nome}")
-    fun trovaUtente(@PathVariable nome: String) =
-            repository.findByNickName(nome)
 }
 
+@RestController
 class GenericStringController(val repository: GenericStringRepository, val repoSessione: SessioneRepository) {
     @PostMapping("/api/giornata")
     fun aggiungiGiornata(@RequestBody post: GiornataRicevuta): Any {
+        print("Giornata Ricevuta:"+post.giornata.toString()+"\n")
         if(repoSessione.findByToken(post.token).userid == post.idutente) {
-            repository.findByName("giornata")[0].value =
-                    if (repository.findByName("giornata")[0].value.toLong() < post.giornata)
-                        (post.giornata.toString())
-                    else
-                        (repository.findByName("giornata")[0].value)
+            if (repository.findByName("giornata")[0].value.toLong() < post.giornata)
+                repository.cambiaStringaIn("giornata", post.giornata.toString())
+
+            print("Dopo aggiunta giornata:"+repository.findByName("giornata")[0].value+"\n")
             return "true"
         }
         return "false"
     }
 
-    @GetMapping("/api/giornata")
-    fun giornata() =
-            repository.findByName("giornata")[0].value.toLong()
+    @GetMapping("/api/trovagiornata")
+    fun trovaGiornata(): String {
+        print(repository.findByName("giornata")[0].value.toLong())
+        return "{ \"g\": "+repository.findByName("giornata")[0].value+" }"
+    }
 
 }
 
 @RestController
-class PostController (val repository: PostRepository, val repoSessione: SessioneRepository, val repoUtenti: UtenteRepository, val string: GenericStringRepository, var partite: PartitaRepository) {
-
-    @PostMapping("/api/pubblica")
-    fun pubblicaPost(@RequestBody post: PostRicevuto): Any {
-        if(repoSessione.findByToken(post.token).userid == post.idutente) {
-            return repository.save(Post(
-                    System.currentTimeMillis() / 1000,
-                    post.lead,
-                    post.titolo,
-                    post.testo,
-                    post.idutente,
-                    post.headerURL
-            ))
-        }
-        return "false"
-    }
+class PostController (val repoSessione: SessioneRepository, val repoUtenti: UtenteRepository, val string: GenericStringRepository, var partite: PartitaRepository) {
 
 
     @PostMapping("/api/partita")
@@ -151,9 +124,6 @@ class PostController (val repository: PostRepository, val repoSessione: Sessione
     fun findAllPosts() =
             partite.findAll()
 
-    @GetMapping("/api/id/{id}")
-    fun findPostById(@PathVariable id: Long) =
-            repository.findById(id)
 
     @GetMapping("/")
     fun homePage(model: ModelAndView): ModelAndView {
@@ -187,5 +157,5 @@ class Application {
 
 
 fun main(args: Array<String>) {
-    runApplication<CmsApplication>(*args)
+    runApplication<Application>(*args)
 }

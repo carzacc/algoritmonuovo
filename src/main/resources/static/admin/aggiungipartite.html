@@ -7,7 +7,7 @@
     <meta name="author" content="">
     <link rel="icon" href="./favicon.png">
 
-    <title>Amministrazione Blog ZaccaCMS</title>
+    <title>Aggiunta partite Algoritmo</title>
 
     <link href="http://getbootstrap.com/docs/4.1/examples/dashboard/dashboard.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -73,14 +73,15 @@
           </div>
 
 
-          <div class="mb-3">
-            <input type="text"  id="titolo" placeholder="Squadra in Casa" required>
-            <input type="text"  id="headerURL" placeholder="Squadra in Trasferta" required> <br>
-            <input type="text" id="lead" placeholder="Goal Squadra in Casa" required>
-            <input type="text" id="lead" placeholder="Goal Squadra in Trasferta" required> <br>
-            <button class="btn btn-primary" >Altra Partita</button>
+          <div id="partite" class="mb-3">
+            <input type="text"  class="sqCasa" placeholder="Squadra in Casa" required>
+            <input type="text"  class="sqTrasferta" placeholder="Squadra in Trasferta" required> <br>
+            <input type="text" class="golCasa" placeholder="Gol Squadra in Casa" required>
+            <input type="text" class="golTrasferta" placeholder="Gol Squadra in Trasferta" required> <br>
           </div>
-
+          <div class="mb-3">
+            <button id="altra" class="btn btn-primary" >Altra Partita</button>
+          </div>
             <div class="row">
             </div>
             <hr class="mb-4">
@@ -91,7 +92,7 @@
       </div>
 
       <footer class="my-5 pt-5 text-muted text-center text-small">
-        <p class="mb-1">Grazie per il post!</p>
+        <p class="mb-1">Problemi? Invia una mail a <a href="mailto:carmine@carminezacc.com">carmine@carminezacc.com</a></p>
       </footer>
     </div>
         </main>

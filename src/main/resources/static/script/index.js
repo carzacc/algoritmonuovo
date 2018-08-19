@@ -135,9 +135,7 @@ class Squadra {
 var Inter = new Squadra("Inter");
 var Juve = new Squadra("juventus");
 Juve.aggiungiAlias([
-    "Juventus",
     "Juve",
-    "juve"
 ]);
 var Napoli = new Squadra("Napoli");
 var Milan = new Squadra("Milan");
@@ -149,9 +147,6 @@ var Empoli = new Squadra("Empoli");
 var Torino = new Squadra("Torino");
 var Atalanta = new Squadra("Atalanta");
 var Spal = new Squadra("Spal");
-Spal.aggiungiAlias([
-    "SPAL"
-]);
 var Parma = new Squadra("Parma");
 var Chievo = new Squadra("Chievo");
 Chievo.aggiungiAlias([
@@ -168,59 +163,59 @@ var squadre = new Array(20);
 var partite;
 function carica() {
     $.getJSON("/api/partite", function (p) {
-        alert("CARICATO!");
         partite = p;
-        return 0;
-    });
-    squadre[inter] = Inter;
-    squadre[juve] = Juve;
-    squadre[milan] = Milan;
-    squadre[sampdoria] = Sampdoria;
-    squadre[torino] = Torino;
-    squadre[roma] = Roma;
-    squadre[parma] = Parma;
-    squadre[empoli] = Empoli;
-    squadre[atalanta] = Atalanta;
-    squadre[spal] = Spal;
-    squadre[frosinone] = Frosinone;
-    squadre[chievo] = Chievo;
-    squadre[fiorentina] = Fiorentina;
-    squadre[napoli] = Napoli;
-    squadre[bologna] = Bologna;
-    squadre[cagliari] = Cagliari;
-    squadre[genoa] = Genoa;
-    squadre[sassuolo] = Sassuolo;
-    squadre[lazio] = Lazio;
-    squadre[udinese] = Udinese;
-    $.getJSON("/api/giornata", function (g) {
-        console.log(g);
-        calcola(g);
-        for (let i = g; i > 0; i--) {
-            let li = document.createElement("li");
-            let input = document.createElement("input");
-            let label = document.createElement("label");
-            input.type = "radio";
-            input.onclick = () => { calcola(i); };
-            label.innerText = `Giornata ${i}`;
-            if (i == g) {
-                input.checked = true;
+        squadre[inter] = Inter;
+        squadre[juve] = Juve;
+        squadre[milan] = Milan;
+        squadre[sampdoria] = Sampdoria;
+        squadre[torino] = Torino;
+        squadre[roma] = Roma;
+        squadre[parma] = Parma;
+        squadre[empoli] = Empoli;
+        squadre[atalanta] = Atalanta;
+        squadre[spal] = Spal;
+        squadre[frosinone] = Frosinone;
+        squadre[chievo] = Chievo;
+        squadre[fiorentina] = Fiorentina;
+        squadre[napoli] = Napoli;
+        squadre[bologna] = Bologna;
+        squadre[cagliari] = Cagliari;
+        squadre[genoa] = Genoa;
+        squadre[sassuolo] = Sassuolo;
+        squadre[lazio] = Lazio;
+        squadre[udinese] = Udinese;
+        $.getJSON("/api/trovagiornata", function (g) {
+            console.log(g.g);
+            calcola(g.g);
+            for (let i = g.g; i > 0; i--) {
+                let li = document.createElement("li");
+                let input = document.createElement("input");
+                let label = document.createElement("label");
+                input.type = "radio";
+                input.name = "giornata";
+                input.onclick = () => { calcola(i); };
+                label.innerText = `Giornata ${i}`;
+                if (i == g.g) {
+                    input.checked = true;
+                }
+                else {
+                    input.checked = false;
+                }
+                $(li).append(input);
+                $(li).append(label);
+                $("#lista").append(li);
             }
-            else {
-                input.checked = false;
-            }
-            $(li).append(input);
-            $(li).append(label);
-            $("#lista").append(li);
-        }
+        });
     });
     return 0;
 }
 function calcola(giornata) {
     for (let p of partite) {
-        if (p.giornata < giornata)
+        if (p.giornata <= giornata)
             partita(p.team1, p.team2, p.goal1, p.goal2);
     }
-    squadre.sort((a, b) => b.somma - a.somma);
+    squadre.sort((a, b) => (b.getPunti()+b.getPuntiTrad()) - (a.getPunti()+a.getPuntiTrad()));
+    $("#tabella").empty();
     let i = 0;
     for (let squadra of squadre) {
         let fila = document.createElement("tr");
@@ -232,14 +227,14 @@ function calcola(giornata) {
         let trad = document.createElement("td");
         let alt = document.createElement("td");
         let som = document.createElement("td");
-        pos.innerText = `${i}`;
+        pos.innerText = `${i+1}`;
         nom.innerText = squadra.nomeSquadra;
-        gF.innerText = `${squadra.getGolFatti}`;
-        gS.innerText = `${squadra.getGolSubiti}`;
-        dR.innerText = `${squadra.getGolFatti - squadra.getGolSubiti}`;
-        trad.innerText = `${squadra.getPuntiTrad}`;
-        alt.innerText = `${squadra.getPunti}`;
-        som.innerText = `${squadra.getPunti + squadra.getPuntiTrad}`;
+        gF.innerText = squadra.getGolFatti().toString();
+        gS.innerText = squadra.getGolSubiti().toString();
+        dR.innerText = (squadra.getGolFatti() - squadra.getGolSubiti()).toString();
+        trad.innerText = squadra.getPuntiTrad().toFixed(1).toString();
+        alt.innerText = squadra.getPunti().toFixed(1).toString();
+        som.innerText = (squadra.getPunti() + squadra.getPuntiTrad()).toFixed(1).toString();
         $(fila).append(pos);
         $(fila).append(nom);
         $(fila).append(gF);
@@ -253,6 +248,7 @@ function calcola(giornata) {
     }
 }
 function partita(squadra1, squadra2, goal1, goal2) {
+    console.log(squadra1+"-"+squadra2+" "+goal1.toString()+"-"+goal2.toString())
     for (let corrente of squadre) {
         if (corrente.nomeSquadra.toLowerCase() == squadra1.toLowerCase())
             corrente.aggiungipartita(goal1, goal2);

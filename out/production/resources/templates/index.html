@@ -6,36 +6,45 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title th:text="${nomeBlog}"></title>
+    <title>Algoritmo</title>
 
     <link rel="shortcut icon" type="image/png" th:href="@{/favicon.png}"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" href="style/index.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="script/index.js"></script>
-    <script>carica("");</script>
+    <script>carica();</script>
 
 </head>
 
 <body class="navbar-default">
-
 <nav class="navbar navbar-dark bg-dark navbar-expand-md fixed-top">
-    <a class=" navbar-brand" href="#" th:text="${nomeBlog}"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav mr-auto" id="navbarList">
-        </ul>
-      </div>
+    <a class=" navbar-brand" href="#">ALGORITMO</a>
 </nav>
+<br><br><br><br>
+<div class="container-fluid">
+  <div class="row">
+    <nav class="col-md-2 d-none d-md-block sidebar ">
+      <ul id="lista" class="nav nav-pills flex-column">
+      </ul>
+    </nav>
 <main role="main" class="container">
 
-    <div class="starter-template">
-        <p th:each="post : ${posts}">
-            <a th:text="${post.titolo}" th:href="@{'/posts/' + ${post.id}}"></a><br />
-        </p>
-    </div>
+    <table id="classifica" class="table">
+      <thead><tr>
+        <th>"#"</th>
+        <th>Nome Squadra</th>
+        <th>Goal Fatti</th>
+        <th>Goal Subiti</th>
+        <th>Differenza Reti</th>
+        <th>Tradizionale</th>
+        <th>Alternativa</th>
+        <th>Somma</th>
+    </tr></thead>
+    <tbody id="tabella">
+
+    </tbody>
+  </table>
 
 </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
