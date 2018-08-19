@@ -232,9 +232,9 @@ function calcola(giornata) {
         gF.innerText = squadra.getGolFatti().toString();
         gS.innerText = squadra.getGolSubiti().toString();
         dR.innerText = (squadra.getGolFatti() - squadra.getGolSubiti()).toString();
-        trad.innerText = squadra.getPuntiTrad().toString();
-        alt.innerText = squadra.getPunti().toString();
-        som.innerText = (squadra.getPunti() + squadra.getPuntiTrad()).toString();
+        trad.innerText = squadra.getPuntiTrad().toFixed(1).toString();
+        alt.innerText = squadra.getPunti().toFixed(1).toString();
+        som.innerText = (squadra.getPunti() + squadra.getPuntiTrad()).toFixed(1).toString();
         $(fila).append(pos);
         $(fila).append(nom);
         $(fila).append(gF);

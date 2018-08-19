@@ -2,43 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="10bd3757-bd3e-4a0b-8ca5-c5c13015588f" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__mysql_mysql_connector_java_5_1_46.xml" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.5.1/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.5.1/fileHashes/fileHashes.bin" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.5.1/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.5.1/fileHashes/fileHashes.lock" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_mongodb_bson_3_6_4.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_mongodb_mongodb_driver_3_6_4.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_mongodb_mongodb_driver_core_3_6_4.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_data_mongodb_2_0_4_RELEASE.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_data_spring_data_mongodb_2_0_9_RELEASE.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/algoritmo_main.iml" afterPath="$PROJECT_DIR$/.idea/modules/algoritmo_main.iml" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/algoritmo_test.iml" afterPath="$PROJECT_DIR$/.idea/modules/algoritmo_test.iml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/carminezacc/algoritmo/AlgoritmoKt.class" afterPath="$PROJECT_DIR$/out/production/classes/com/carminezacc/algoritmo/AlgoritmoKt.class" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/com/carminezacc/algoritmo/Application$init$1.class" afterPath="$PROJECT_DIR$/out/production/classes/com/carminezacc/algoritmo/Application$init$1.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/carminezacc/algoritmo/Application.class" afterPath="$PROJECT_DIR$/out/production/classes/com/carminezacc/algoritmo/Application.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/carminezacc/algoritmo/CmsApplication.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/carminezacc/algoritmo/GenericStringController.class" afterPath="$PROJECT_DIR$/out/production/classes/com/carminezacc/algoritmo/GenericStringController.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/carminezacc/algoritmo/PostController.class" afterPath="$PROJECT_DIR$/out/production/classes/com/carminezacc/algoritmo/PostController.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/carminezacc/algoritmo/PostRicevuto.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/carminezacc/algoritmo/StringaAutorizzata.class" afterPath="$PROJECT_DIR$/out/production/classes/com/carminezacc/algoritmo/StringaAutorizzata.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/carminezacc/algoritmo/UsernameAndPassword.class" afterPath="$PROJECT_DIR$/out/production/classes/com/carminezacc/algoritmo/UsernameAndPassword.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/carminezacc/algoritmo/UtenteController.class" afterPath="$PROJECT_DIR$/out/production/classes/com/carminezacc/algoritmo/UtenteController.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/carminezacc/algoritmo/models/Post.class" afterPath="$PROJECT_DIR$/out/production/classes/com/carminezacc/algoritmo/models/Post.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/carminezacc/algoritmo/repositories/GenericStringRepository.class" afterPath="$PROJECT_DIR$/out/production/classes/com/carminezacc/algoritmo/repositories/GenericStringRepository.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/static/admin.html" afterPath="$PROJECT_DIR$/out/production/resources/static/admin.html" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/static/admin/posts.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/static/admin/users.html" afterPath="$PROJECT_DIR$/out/production/resources/static/admin/users.html" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/static/script/admin.js" afterPath="$PROJECT_DIR$/out/production/resources/static/script/admin.js" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/application.properties" afterPath="$PROJECT_DIR$/out/production/resources/application.properties" />
       <change beforePath="$PROJECT_DIR$/out/production/resources/static/script/index.js" afterPath="$PROJECT_DIR$/out/production/resources/static/script/index.js" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/static/script/index.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/static/script/post.js" afterPath="$PROJECT_DIR$/out/production/resources/static/script/post.js" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/static/style/.sass-cache/1fa2e243d9ffb861403a119f1226db9163cd88fe/index.sassc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/static/style/.sass-cache/2fc868526dfc0a99dd23479c7502ecf9d6319f4e/index.sassc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/static/style/index.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/static/style/index.css.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/static/style/index.sass" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/templates/index.html" afterPath="$PROJECT_DIR$/out/production/resources/templates/index.html" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/templates/post.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/cc/carmineza/CMS/CmsApplicationTests.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/carminezacc/algoritmo/CmsApplicationTests.class" afterPath="" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/carminezacc/algoritmo/Algoritmo.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/com/carminezacc/algoritmo/Algoritmo.kt" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/carminezacc/algoritmo/repositories/GenericStringRepository.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/com/carminezacc/algoritmo/repositories/GenericStringRepository.kt" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin.html" afterPath="$PROJECT_DIR$/src/main/resources/static/admin.html" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/aggiungipartite.html" afterPath="$PROJECT_DIR$/src/main/resources/static/admin/aggiungipartite.html" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/login.html" afterPath="$PROJECT_DIR$/src/main/resources/static/login.html" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/script/index.js" afterPath="$PROJECT_DIR$/src/main/resources/static/script/index.js" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/script/index.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/script/post.js" afterPath="$PROJECT_DIR$/src/main/resources/static/script/post.js" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -55,6 +35,13 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view />
+      </state>
+    </system>
+  </component>
   <component name="FavoritesManager">
     <favorites_list name="algoritmo" />
   </component>
@@ -63,8 +50,28 @@
       <file leaf-file-name="Algoritmo.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/carminezacc/algoritmo/Algoritmo.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-710">
-              <caret line="97" column="69" lean-forward="true" selection-start-line="97" selection-start-column="69" selection-end-line="97" selection-end-column="69" />
+            <state relative-caret-position="298">
+              <caret line="144" column="0" lean-forward="false" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="452">
+              <caret line="51" column="41" lean-forward="false" selection-start-line="51" selection-start-column="41" selection-end-line="51" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="3" column="35" lean-forward="false" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -74,7 +81,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/resources/static/login.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="216">
-              <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+              <caret line="12" column="9" lean-forward="false" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -102,10 +109,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/static/script/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
+            <state relative-caret-position="-152">
               <caret line="235" column="53" lean-forward="false" selection-start-line="235" selection-start-column="53" selection-end-line="235" selection-end-column="53" />
               <folding />
             </state>
@@ -116,7 +123,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/resources/static/admin/aggiungipartite.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="64">
-              <caret line="4" column="90" lean-forward="true" selection-start-line="4" selection-start-column="90" selection-end-line="4" selection-end-column="90" />
+              <caret line="4" column="90" lean-forward="false" selection-start-line="4" selection-start-column="90" selection-end-line="4" selection-end-column="90" />
               <folding />
             </state>
           </provider>
@@ -404,8 +411,8 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="4603603948000" />
-        <entry key="$PROJECT_DIR$/build.gradle" value="2135064668" />
+        <entry key="$PROJECT_DIR$" value="4603766563000" />
+        <entry key="$PROJECT_DIR$/build.gradle" value="2706689312" />
         <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="2881256037" />
         <entry key="$PROJECT_DIR$/settings.gradle" value="2976192261" />
       </map>
@@ -569,7 +576,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/kotlin/com/carminezacc/algoritmo/models/GenericString.kt" />
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/carminezacc/algoritmo/repositories/GiornataRepository.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/carminezacc/algoritmo/models/Giornata.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/carminezacc/algoritmo/models/Partita.kt" />
@@ -578,10 +584,12 @@
         <option value="$PROJECT_DIR$/src/main/resources/static/script/post.js" />
         <option value="$PROJECT_DIR$/src/main/resources/static/admin.html" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/carminezacc/algoritmo/repositories/GenericStringRepository.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/com/carminezacc/algoritmo/Algoritmo.kt" />
         <option value="$PROJECT_DIR$/src/main/resources/static/admin/aggiungipartite.html" />
         <option value="$PROJECT_DIR$/src/main/resources/static/login.html" />
         <option value="$PROJECT_DIR$/src/main/resources/static/script/index.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/carminezacc/algoritmo/Algoritmo.kt" />
+        <option value="$PROJECT_DIR$/build.gradle" />
       </list>
     </option>
   </component>
@@ -665,40 +673,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="algoritmo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="algoritmo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="algoritmo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="algoritmo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="algoritmo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="algoritmo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="script" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="algoritmo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="algoritmo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -848,7 +822,7 @@
     </recent_temporary>
   </component>
   <component name="SbtLocalSettings">
-    <option name="lastUpdateTimestamp" value="1534535377600" />
+    <option name="lastUpdateTimestamp" value="1534697996178" />
     <option name="externalProjectsViewState">
       <projects_view />
     </option>
@@ -887,6 +861,7 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12660256" sideWeight="0.48896247" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289183" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -899,7 +874,6 @@
       <window_info id="sbt" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289183" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289183" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="sbt-shell-toolwindow" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1173,13 +1147,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/carminezacc/algoritmo/repositories/GiornataRepository.kt" />
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/carminezacc/algoritmo/models/Giornata.kt" />
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
-          <caret line="27" column="20" lean-forward="true" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/post.html" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/script/index.ts">
       <provider selected="true" editor-type-id="text-editor">
@@ -1275,15 +1242,15 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/admin/aggiungipartite.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="64">
-          <caret line="4" column="90" lean-forward="true" selection-start-line="4" selection-start-column="90" selection-end-line="4" selection-end-column="90" />
+          <caret line="4" column="90" lean-forward="false" selection-start-line="4" selection-start-column="90" selection-end-line="4" selection-end-column="90" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/carminezacc/algoritmo/Algoritmo.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/script/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-710">
-          <caret line="97" column="69" lean-forward="true" selection-start-line="97" selection-start-column="69" selection-end-line="97" selection-end-column="69" />
+        <state relative-caret-position="-152">
+          <caret line="235" column="53" lean-forward="false" selection-start-line="235" selection-start-column="53" selection-end-line="235" selection-end-column="53" />
           <folding />
         </state>
       </provider>
@@ -1291,15 +1258,31 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
-          <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+          <caret line="12" column="9" lean-forward="false" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/script/index.js">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/carminezacc/algoritmo/Algoritmo.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="235" column="53" lean-forward="false" selection-start-line="235" selection-start-column="53" selection-end-line="235" selection-end-column="53" />
+        <state relative-caret-position="298">
+          <caret line="144" column="0" lean-forward="false" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="35" lean-forward="false" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="452">
+          <caret line="51" column="41" lean-forward="false" selection-start-line="51" selection-start-column="41" selection-end-line="51" selection-end-column="41" />
           <folding />
         </state>
       </provider>
