@@ -139,7 +139,8 @@ class Application {
         fun passwordEncoder(): PasswordEncoder {
             return BCryptPasswordEncoder()
         }
-    */ }
+    */
+}
 
 
 fun main(args: Array<String>) {
