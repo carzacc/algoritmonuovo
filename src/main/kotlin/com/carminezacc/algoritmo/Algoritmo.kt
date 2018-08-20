@@ -156,6 +156,7 @@ class PostController (val repoSessione: SessioneRepository, val repoUtenti: Uten
             ))
             i++
         }
+        model.model.put("nomeSquadra", nomesquadra)
         model.model.put("partite", partite)
         return model
     }
