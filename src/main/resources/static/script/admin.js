@@ -27,6 +27,34 @@ if(!cookieIsSet("token")) {
   admin();
 }
 
+function elimina(id) {
+    $.ajax({
+      type: 'POST',
+      contentType: 'application/json',
+      url: "/api/cancella",
+      data: `{
+            "token": "${getCookie("token")}",
+            "idutente": "${idutente.toString()}",
+            "id": "${id.toString()}",
+            }`,
+      processData: false,
+      success: function(data) {
+        if(data == false) {
+            alert("Si è verificato un errore");
+        }
+        else {
+            window.location.href = "/admin.html";
+        }
+        return false;
+      },
+      error: function() {
+        alert("ERRORE");
+        return false;
+      }
+     });
+
+}
+
 function admin() {
   let tBody = document.getElementById("tableBody");
   let row;
@@ -37,11 +65,13 @@ function admin() {
       let cellaSquadra1 = document.createElement("td");
       let cellaSquadra2 = document.createElement("td");
       let cellaRisultato = document.createElement("td");
+      let cellaCancella =document.createElement("td");
       row = document.createElement("tr");
       cellaGiornata.innerText = this.giornata;
       cellaSquadra1.innerText = this.team1;
       cellaSquadra2.innerText = this.team2;
       cellaRisultato.innerText = this.goal1 + "-" + this.goal2;
+      cellaCancella.innerHtml(`<a href="#" onclick="elimina(${this.id})"><img width="20px" height="20px" src="/X.png" /></a>`)
       row.appendChild(cellaGiornata);
       row.appendChild(cellaSquadra1);
       row.appendChild(cellaSquadra2);

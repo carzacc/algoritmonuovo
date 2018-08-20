@@ -29,6 +29,12 @@ class GiornataRicevuta (
         var giornata: Long
 )
 
+class CancellazioneRicevuta (
+        var token: String,
+        var idutente: Long,
+        var id: Long
+)
+
 class PartitaRicevuta (
         var token: String,
         var idutente: Long,
@@ -129,6 +135,15 @@ class PostController (val repoSessione: SessioneRepository, val repoUtenti: Uten
     fun homePage(model: ModelAndView): ModelAndView {
         model.viewName = "index"
         return model
+    }
+
+    @PostMapping("/api/cancella")
+    fun cancellaPartita(@RequestBody cancellazion: CancellazioneRicevuta): Any {
+        if (repoSessione.findByToken(cancellazion.token).userid == cancellazion.idutente) {
+            partite.deleteById(cancellazion.id)
+            return "true"
+        }
+        return "false"
     }
 }
 
