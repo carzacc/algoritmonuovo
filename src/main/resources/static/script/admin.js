@@ -101,7 +101,7 @@ function admin() {
       let linkcella = document.createElement('a');
       let imgcella = document.createElement('img');
       linkcella.href = "#";
-      linkcella.onclick = elimina(this.id);
+      linkcella.onclick = () => elimina(this.id);
       imgcella.width="20";
       imgcella.height="20";
       imgcella.src="/X.png";
