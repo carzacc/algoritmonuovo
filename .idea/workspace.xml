@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="10bd3757-bd3e-4a0b-8ca5-c5c13015588f" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin.html" afterPath="$PROJECT_DIR$/src/main/resources/static/admin.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/aggiungipartite.html" afterPath="$PROJECT_DIR$/src/main/resources/static/admin/aggiungipartite.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -46,8 +47,8 @@
       <file leaf-file-name="admin.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/static/admin.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state relative-caret-position="324">
+              <caret line="18" column="71" lean-forward="false" selection-start-line="18" selection-start-column="71" selection-end-line="18" selection-end-column="71" />
               <folding />
             </state>
           </provider>
@@ -109,6 +110,16 @@
         <entry file="file://$PROJECT_DIR$/src/main/resources/static/favicon.png">
           <provider selected="true" editor-type-id="images">
             <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="aggiungipartite.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/admin/aggiungipartite.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="18" column="69" lean-forward="false" selection-start-line="18" selection-start-column="69" selection-end-line="18" selection-end-column="69" />
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
@@ -577,7 +588,6 @@
         <option value="$PROJECT_DIR$/src/main/kotlin/com/carminezacc/algoritmo/repositories/PartitaRepository.kt" />
         <option value="$PROJECT_DIR$/src/main/resources/static/script/post.js" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/carminezacc/algoritmo/repositories/GenericStringRepository.kt" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/admin/aggiungipartite.html" />
         <option value="$PROJECT_DIR$/src/main/resources/static/login.html" />
         <option value="$PROJECT_DIR$/src/main/resources/static/script/index.js" />
         <option value="$PROJECT_DIR$/src/test/kotlin/cc/carmineza/CMS/CmsApplicationTests.kt" />
@@ -585,6 +595,7 @@
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/carminezacc/algoritmo/Algoritmo.kt" />
         <option value="$PROJECT_DIR$/src/main/resources/static/script/admin.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/admin/aggiungipartite.html" />
         <option value="$PROJECT_DIR$/src/main/resources/static/admin.html" />
       </list>
     </option>
@@ -1261,14 +1272,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="9" lean-forward="false" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/script/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="806">
@@ -1281,14 +1284,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="4" column="36" lean-forward="true" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/admin/aggiungipartite.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1332,10 +1327,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="9" lean-forward="false" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/admin/aggiungipartite.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="18" column="69" lean-forward="false" selection-start-line="18" selection-start-column="69" selection-end-line="18" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/admin.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state relative-caret-position="324">
+          <caret line="18" column="71" lean-forward="false" selection-start-line="18" selection-start-column="71" selection-end-line="18" selection-end-column="71" />
           <folding />
         </state>
       </provider>
