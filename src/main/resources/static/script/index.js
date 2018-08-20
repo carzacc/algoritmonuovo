@@ -230,7 +230,7 @@ function calcola(giornata) {
         pos.innerText = `${i+1}`;
         let linkNom = document.createElement("a");
         linkNom.innerText = squadra.nomeSquadra;
-        linkNom.href = "/squadra/${squadra.nomeSquadra}";
+        linkNom.href = `/squadra/${squadra.nomeSquadra}`;
         nom.appendChild(linkNom);
         gF.innerText = squadra.getGolFatti().toString();
         gS.innerText = squadra.getGolSubiti().toString();
