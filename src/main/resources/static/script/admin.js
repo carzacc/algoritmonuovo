@@ -1,3 +1,26 @@
+/* file home page admin
+*
+* Copyright 2018 Carmine Zaccagnino
+*
+* Licensed under the EUPL, Version 1.1 or – as soon they
+* will be approved by the European Commission - subsequent
+* versions of the EUPL (the "Licence");
+* You may not use this work except in compliance with the
+* Licence.
+* You may obtain a copy of the Licence at:
+* https://joinup.ec.europa.eu/software/page/eupl
+*
+* Unless required by applicable law or agreed to in
+* writing, software distributed under the Licence is
+* distributed on an "AS IS" basis,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either
+* express or implied.
+* See the Licence for the specific language governing
+* permissions and limitations under the Licence.
+*/
+
+var idutente;
+
 function setCookie(nome, valore) {
    document.cookie = nome + "=" + valore+";path=/";
 }
@@ -56,6 +79,10 @@ function elimina(id) {
 }
 
 function admin() {
+   $.getJSON("/api/id/nome/"+getCookie("username"), function(utente) {
+       idutente = utente;
+       return false;
+   });
   let tBody = document.getElementById("tableBody");
   let row;
   $.getJSON("/api/partite", function(partite) {
