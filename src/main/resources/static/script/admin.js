@@ -58,7 +58,7 @@ function elimina(id) {
       data: `{
             "token": "${getCookie("token")}",
             "idutente": "${idutente.toString()}",
-            "id": "${id.toString()}",
+            "id": "${id.toString()}"
             }`,
       processData: false,
       success: function(data) {
