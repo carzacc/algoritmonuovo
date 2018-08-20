@@ -71,11 +71,12 @@ function admin() {
       cellaSquadra1.innerText = this.team1;
       cellaSquadra2.innerText = this.team2;
       cellaRisultato.innerText = this.goal1 + "-" + this.goal2;
-      cellaCancella.innerHtml(`<a href="#" onclick="elimina(${this.id})"><img width="20px" height="20px" src="/X.png" /></a>`)
+      cellaCancella.innerHtml(`<a href="#" onclick="elimina(${this.id})"><img width="20px" height="20px" src="/X.png" /></a>`);
       row.appendChild(cellaGiornata);
       row.appendChild(cellaSquadra1);
       row.appendChild(cellaSquadra2);
       row.appendChild(cellaRisultato);
+      row.appendChild(cellaCancella);
       tBody.appendChild(row);
     });
   });
