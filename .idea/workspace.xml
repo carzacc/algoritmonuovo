@@ -106,8 +106,8 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/static/script/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="706">
-              <caret line="232" column="55" lean-forward="false" selection-start-line="232" selection-start-column="55" selection-end-line="232" selection-end-column="55" />
+            <state relative-caret-position="418">
+              <caret line="216" column="81" lean-forward="false" selection-start-line="216" selection-start-column="81" selection-end-line="216" selection-end-column="81" />
               <folding />
             </state>
           </provider>
@@ -1343,8 +1343,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/script/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="706">
-          <caret line="232" column="55" lean-forward="false" selection-start-line="232" selection-start-column="55" selection-end-line="232" selection-end-column="55" />
+        <state relative-caret-position="418">
+          <caret line="216" column="81" lean-forward="false" selection-start-line="216" selection-start-column="81" selection-end-line="216" selection-end-column="81" />
           <folding />
         </state>
       </provider>

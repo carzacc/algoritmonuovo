@@ -214,6 +214,7 @@ function calcola(giornata) {
         if (p.giornata <= giornata)
             partita(p.team1, p.team2, p.goal1, p.goal2);
     }
+    squadre.sort((a, b) => (b.getGolFatti()-b.getGolSubiti()) - (a.getGolFatti()-a.getGolSubiti()));
     squadre.sort((a, b) => (b.getPunti()+b.getPuntiTrad()) - (a.getPunti()+a.getPuntiTrad()));
     $("#tabella").empty();
     let i = 0;
