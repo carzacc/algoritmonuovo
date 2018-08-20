@@ -71,7 +71,15 @@ function admin() {
       cellaSquadra1.innerText = this.team1;
       cellaSquadra2.innerText = this.team2;
       cellaRisultato.innerText = this.goal1 + "-" + this.goal2;
-      cellaCancella.innerHtml = `<a href="#" onclick="elimina(${this.id})"><img width="20px" height="20px" src="/X.png" /></a>`;
+      let linkcella = document.createElement('a');
+      let imgcella = document.createElement('img');
+      linkcella.href = "#";
+      linkcella.onclick = elimina(this.id);
+      imgcella.width="20px";
+      imgcella.height="20px";
+      imgcella.src="/X.png";
+      linkcella.appendChild(imgcella);
+      cellaCancella.appendChild(linkcella);
       row.appendChild(cellaGiornata);
       row.appendChild(cellaSquadra1);
       row.appendChild(cellaSquadra2);
