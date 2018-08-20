@@ -144,7 +144,7 @@ class PostController (val repoSessione: SessioneRepository, val repoUtenti: Uten
     }
     @GetMapping("/squadra/{nomesquadra}")
     fun squadra(model: ModelAndView, @PathVariable nomesquadra: String): ModelAndView {
-        model.viewName = "index"
+        model.viewName = "squadra"
         var partiteDb = partite.findByTeam1(nomesquadra).union(partite.findByTeam2(nomesquadra))
         var partite = mutableListOf<PartitaDaInviare>()
         var i = 0
