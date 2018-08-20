@@ -106,6 +106,12 @@ class GenericStringController(val repository: GenericStringRepository, val repoS
 
 }
 
+class PartitaDaInviare(
+        var giornata: Long,
+        var partita: String,
+        var risultato: String
+)
+
 @RestController
 class PostController (val repoSessione: SessioneRepository, val repoUtenti: UtenteRepository, val string: GenericStringRepository, var partite: PartitaRepository) {
 
@@ -134,6 +140,23 @@ class PostController (val repoSessione: SessioneRepository, val repoUtenti: Uten
     @GetMapping("/")
     fun homePage(model: ModelAndView): ModelAndView {
         model.viewName = "index"
+        return model
+    }
+    @GetMapping("/squadra/{nomesquadra}")
+    fun squadra(model: ModelAndView, @PathVariable nomesquadra: String): ModelAndView {
+        model.viewName = "index"
+        var partiteDb = partite.findByTeam1(nomesquadra).union(partite.findByTeam2(nomesquadra))
+        var partite = mutableListOf<PartitaDaInviare>()
+        var i = 0
+        for(partitaDb in partiteDb) {
+            partite.add(i, PartitaDaInviare(
+                    partitaDb.giornata,
+                    "${partitaDb.team1}-${partitaDb.team2}",
+                    "${partitaDb.goal1}-${partitaDb.goal2}"
+            ))
+            i++
+        }
+        model.model.put("partite", partite)
         return model
     }
 

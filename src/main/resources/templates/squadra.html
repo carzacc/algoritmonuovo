@@ -12,8 +12,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" href="style/index.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="script/index.js"></script>
-    <script>carica();</script>
 
 </head>
 
@@ -26,23 +24,25 @@
   <div class="row">
     <nav class="col-md-2 d-none d-md-block sidebar ">
       <ul id="lista" class="nav nav-pills flex-column">
+          <a class="nav-item" href="/">Torna alla classifica</a>
       </ul>
     </nav>
 <main role="main" class="container">
 
-    <table id="classifica" class="table">
+    <h1 th:text="${nomeSquadra}"></h1>
+    <h3>Partite Giocate</h3>
+    <table id="partite" class="table">
       <thead><tr>
-        <th>Pos.</th>
-        <th>Nome Squadra</th>
-        <th>Goal Fatti</th>
-        <th>Goal Subiti</th>
-        <th>Differenza Reti</th>
-        <th>Tradizionale</th>
-        <th>Alternativa</th>
-        <th>Somma</th>
+        <th>Giornata</th>
+        <th>Partita</th>
+        <th>Risultato</th>
     </tr></thead>
     <tbody id="tabella">
-
+    <tr th:each="partita : ${partite}">
+        <td th:text="${partita.giornata}"></td>
+        <td th:text="${partita.partita}"></td>
+        <td th:text="${partita.risultato}"></td>
+    </tr>
     </tbody>
   </table>
 
