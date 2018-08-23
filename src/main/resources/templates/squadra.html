@@ -28,7 +28,7 @@
       </ul>
     </nav>
 <main role="main" class="container">
-    <img width="80" height="80" src="X.png" th:src="${nomeSquadra + '.png'}" />
+    <img width="150" height="150" src="X.png" th:src="${'/squadre/' + nomeSquadra + '.png'}" />
     <h1 th:text="${nomeSquadra}"></h1>
     <h3>Partite Giocate</h3>
     <table id="partite" class="table">

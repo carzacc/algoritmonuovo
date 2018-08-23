@@ -233,7 +233,7 @@ function calcola(giornata) {
         linkNom.innerText = squadra.nomeSquadra;
         linkNom.href = `/squadra/${squadra.nomeSquadra}`;
         let logoSquadra = document.createElement("img");
-        logoSquadra.src=`${squadra.nomeSquadra}.png`;
+        logoSquadra.src=`/squadre/${squadra.nomeSquadra}.png`;
         logoSquadra.height="16";
         logoSquadra.width="16";
         linkNom.appendChild(logoSquadra);
