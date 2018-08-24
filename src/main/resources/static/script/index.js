@@ -121,7 +121,7 @@ class Squadra {
         this.somma = this.punti + this.puntiTrad;
     }
     getSomma() {
-        return this.somma;
+        return this.punti + this.puntiTrad;
     }
     aggiungiAlias(alias) {
         if (alias) {
@@ -130,8 +130,10 @@ class Squadra {
             });
         }
     }
-}
-;
+    getDifferenzaReti() {
+      return this.getGolFatti() - this.getGolSubiti()
+    }
+};
 var Inter = new Squadra("Inter");
 var Juve = new Squadra("juventus");
 Juve.aggiungiAlias([
@@ -214,8 +216,14 @@ function calcola(giornata) {
         if (p.giornata <= giornata)
             partita(p.team1, p.team2, p.goal1, p.goal2);
     }
-    squadre.sort((a, b) => (b.getGolFatti()-b.getGolSubiti()) - (a.getGolFatti()-a.getGolSubiti()));
-    squadre.sort((a, b) => (b.getPunti()+b.getPuntiTrad()) - (a.getPunti()+a.getPuntiTrad()));
+    squadre.sort((a, b) => b.getSomma() - a.getSomma());
+    for(let i=0; i < squadre.length; i++) {
+      if((squadre[i].getSomma() == squadre[i+1].getSomma()) && (squadre[i].getDifferenzaReti() < squadre[i+1].getDifferenzaReti())) {
+        let t = squadre[i];
+        squadre[i] = squadre[i+1];
+        squadre[i+1] = t;
+      }
+    }
     $("#tabella").empty();
     let i = 0;
     for (let squadra of squadre) {
@@ -243,7 +251,7 @@ function calcola(giornata) {
         dR.innerText = (squadra.getGolFatti() - squadra.getGolSubiti()).toString();
         trad.innerText = squadra.getPuntiTrad().toFixed(1).toString();
         alt.innerText = squadra.getPunti().toFixed(1).toString();
-        som.innerText = (squadra.getPunti() + squadra.getPuntiTrad()).toFixed(1).toString();
+        som.innerText = squadra.getSomma().toFixed(1).toString();
         $(fila).append(pos);
         $(fila).append(nom);
         $(fila).append(gF);
